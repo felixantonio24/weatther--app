@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('./assets/1.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  
+}
+
+.root {
+  font-family: 'Oswald', sans-serif;
+}
+.global-card {
+  height: 460px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+.main-card {
+  background-color: #c26c6c; /* Reemplaza #ff0000 con el color que deseas utilizar */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  filter: drop-shadow(4px 6px 8px rgba(0, 0, 0, 0.5));
+  opacity: 0.7;
+  height: 100%;
+  min-width: 440px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: 
+        perspective(90px)
+        rotateX(0deg)
+        rotateY(2deg)
+        rotateZ(0deg)
+        
+}
+
+
+.main-card_info {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 350px;
+  height: 300px;
+}
+.main-card_temp {
+color: rgb(5, 5, 10);
+}
+.main-card_p {
+font-size: 50px;
+color: rgb(4, 4, 10);
+}
+.main-card-img{
+height: 100px;
+width: 100px;
+margin-top: -120px;
+}
+.main-card-img img {
+height: 300px;
+margin-top: -150px;
+margin-left: -100px;
+filter: drop-shadow(4px 6px 8px rgba(0, 0, 0, 0.5));
+}
+.main-location {
+display: flex;
+justify-content: space-between;
+min-width: 350px;
+font-size: 20px;
+color: rgb(0, 0, 0);
+}
+
+.button {
+background-color: rgb(200, 213, 199);
+border: 1px solid rgb(23, 23, 18);
+box-shadow: 0px 6px 6px rgba(57, 7, 7, 0.5);
+border-radius: 50px;
+height: 30px;
+width: 90px;
+cursor: pointer;
+}
+.button:hover {
+box-shadow: 0px 6px 9px rgb(89, 30, 7);
+}
