@@ -31,11 +31,11 @@ body {
   
 }
 .main-card {
-  background-color: #c26c6c; /* Reemplaza #ff0000 con el color que deseas utilizar */
+  background-image: url('assets/2.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  filter: drop-shadow(4px 6px 8px rgba(0, 0, 0, 0.5));
+  filter: drop-shadow(4px 6px 8px rgba(1, 0, 0, 0.5));
   opacity: 0.7;
   height: 100%;
   min-width: 440px;
@@ -43,12 +43,8 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  transform: 
-        perspective(90px)
-        rotateX(0deg)
-        rotateY(2deg)
-        rotateZ(0deg)
-        
+  border-radius: 150px 120px 100px 100px;
+  
 }
 
 
@@ -60,11 +56,11 @@ body {
   height: 300px;
 }
 .main-card_temp {
-color: rgb(5, 5, 10);
+color: rgb(253, 253, 253);
 }
 .main-card_p {
 font-size: 50px;
-color: rgb(4, 4, 10);
+color: rgb(231, 231, 231);
 }
 .main-card-img{
 height: 100px;
@@ -74,26 +70,39 @@ margin-top: -120px;
 .main-card-img img {
 height: 300px;
 margin-top: -150px;
-margin-left: -100px;
-filter: drop-shadow(4px 6px 8px rgba(0, 0, 0, 0.5));
+margin-left: -60px;
+filter: drop-shadow(4px 6px 8px rgb(249, 244, 244));
 }
 .main-location {
 display: flex;
 justify-content: space-between;
 min-width: 350px;
 font-size: 20px;
-color: rgb(0, 0, 0);
+color: rgb(255, 247, 247);
 }
 
 .button {
-background-color: rgb(200, 213, 199);
-border: 1px solid rgb(23, 23, 18);
-box-shadow: 0px 6px 6px rgba(57, 7, 7, 0.5);
+background-color: rgb(213, 215, 224);
+
+box-shadow: 0px 6px 6px rgba(10, 3, 3, 0.5);
 border-radius: 50px;
 height: 30px;
 width: 90px;
 cursor: pointer;
 }
 .button:hover {
-box-shadow: 0px 6px 9px rgb(89, 30, 7);
+box-shadow: 0px 6px 9px rgb(1, 0, 0);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #031e36;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #1d28f0;
+  }
+  button {
+    background-color: #150909;
+  }
 }
