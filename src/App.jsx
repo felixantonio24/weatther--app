@@ -34,7 +34,7 @@ function App() {
       <Seeker onSearch={handleSearch} />
         <div className="card">
         <div className='title'>
-          <p>{weather.name}, {weather.sys?.country}</p>
+          <h1>{weather.name}, {weather.sys?.country}</h1>
         </div>
         
       <div className='text-container'>
